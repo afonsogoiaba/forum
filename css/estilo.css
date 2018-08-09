@@ -1,0 +1,257 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body{
+	height: 100%;
+}
+
+body{
+	background: rgb(0,0,0,0.88);
+}
+
+:root{
+	/*CORES*/
+	--branco8: rgba(9255,255,255,0.8);
+	--branco9: rgba(255,255,255,0.9);
+	--vermelho: rgb(208,38,58);
+	--vermelho-effect: rgb(218,8,43);
+	--preto-forte: #000;
+	--preto9: rgba(0,0,0,0.9);
+	--preto6: rgba(0,0,0,0.6);
+	--preto4: rgba(0,0,0,0.4);
+	/*PADDING*/
+	--padding: 1rem;
+	--metade-padding: 0.5rem; 
+	/*GROSSURA FONTE*/
+	--espessura-fonte1: 100;
+	--espessura-fonte4: 400;
+	--espessura-fonte6: 600;
+	--espessura-fonte9: 900;
+	/*COR PARA DIV'S FOOTER*/
+	--footer-div-1: #a51d2d;
+	--footer-div-2: #811724;
+	--footer-div-3: #900d1d;
+	/*TRANSIÇÕES*/
+	--transition3: 0.3s;
+	--transition4: 0.4s;  
+	--transition5: 0.5s; 
+}
+
+
+header{
+	background: var(--vermelho);
+	display: flex;
+	padding: 1rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+h1{
+	color: var(--branco9);
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+}
+
+nav a{
+	font-size: 18px;
+	margin: 5px;
+	color: var(--branco9);
+	text-decoration: none;
+}
+
+section{
+	height: 90vh;
+	margin: 0 auto;
+}
+
+.home-forum{
+	display: flex;
+	align-items: center;
+}
+
+.prin-msg{
+	width: 100%;
+	padding: 1rem;	
+	color: var(--branco9);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form{
+	width: 100%;
+	padding: 1rem;
+	display: flex;
+}
+
+.prin-msg h2{
+	font-size: 2.5rem;
+	margin-bottom: 30px;
+	width: 50%;
+	text-align: center;
+}
+
+.prin-msg h2 b{
+	color: var(--vermelho-effect);
+}
+
+.prin-msg p{
+	width: 50%;
+	margin-bottom: 10px;
+	font-size: 1.5rem; 
+	text-align: justify;
+}
+
+.btn-home{
+	display: flex;
+}
+
+.nav{
+	background: var(--vermelho);
+	padding: 1rem;
+	margin: 5px;
+	text-align: center;
+	border-radius: 5px;	
+	width: 100px;
+}
+
+.nav a{
+	text-decoration: none;
+	color: var(--branco9);
+	width: 60px;
+	font-size: 1.3rem;
+}
+
+.cadastro,
+.login{
+	width: 70%;
+	padding: var(--padding);
+	background: var(--preto6);
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.cadastro input:focus,
+.login input:focus{
+	outline: none;
+}
+
+.cadastro input,
+.login input{
+	background: unset;
+	padding: 0.5rem;
+}
+
+.cadastro h2,
+.login h2{
+	text-align: center;
+	color: var(--branco9);
+	font-size: 1.8rem;
+}
+
+.cadastro label,
+.login label{
+	font-size: 1rem;
+	color: var(--branco8);
+}
+
+.container-entrada{
+	display: flex;
+	flex-direction: column;
+	padding: 0.5rem;
+	justify-content: center;
+}
+
+.cadastro [type="text"],
+.cadastro [type="password"],
+.cadastro [type="email"],
+.cadastro [type="number"],
+.login [type="text"],
+.login [type="password"]{
+	color: var(--branco8);
+	font-size: 1.1rem;
+	border: none;
+	border-bottom: solid 2px var(--branco8);
+}
+
+.cadastro [type="text"]:focus,
+.cadastro [type="password"]:focus,
+.cadastro [type="email"]:focus,
+.cadastro [type="number"]:focus,
+.login [type="text"]:focus,
+.login [type="password"]:focus{
+		border-bottom: solid 2px var(--vermelho-effect);
+		transition: var(--transition3);
+}
+
+input[type="button"]{
+	cursor: pointer;
+	border: none;
+	width: 100%;
+	height: 70px;
+	font-size: 1.4rem;
+	color: var(--branco8);
+	background: var(--vermelho-effect);
+}
+
+.login{
+	width: 50%;
+}
+
+.login input[type="button"]{
+	width: 100%;
+	border-radius: 5px;
+	height: 60px;
+	font-size: 1.4rem;
+}
+
+.container-btn{
+	padding: 1rem;
+	color: var(--branco9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container-btn h4{
+	cursor: pointer;
+	color: #000;
+	width: 50%;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 70px;
+	background: rgba(255,255,255,0.6);
+	font-size: 1.1rem;
+	text-align: center;
+	margin-left: 20px;
+}
+
+.login .container-btn h4{
+	width: 30%;
+}
+
+.container-btn a{
+	font-size: 1.2rem;
+	color: var(--preto9);
+}
+
+.page:not(:target){
+	display: none;
+}
+
+.page:target{
+	display: block;
+}
+
+.msg{
+	color: red;
+}

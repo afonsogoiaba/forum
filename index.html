@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Fórum</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+	<body>
+		<header>
+			<h1>Fórum</h1>
+			<nav>
+				<ul>
+					<li><a href="#login" onclick="mudaWidth()">Entrar</a></li>
+					<li><a href="#cadastro"onclick="mudaWidth()">Cadastre-se</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="home-forum">
+				<div class="prin-msg">
+					<h2 id="h2">Seja <b>bem vindo</b> ao fórum de discussões do IFMS DISCUSSÕES!</h2>
+					<p id="p">A nossa intenção aqui é que vocês alunos, professores ou comunidade externa possam discutir a elegibilidade dos candidatos! Sabemos que o mundo forma bons cidadãos e que você como uma mente pensante vai querer debater o curriculo e saber do passado dos seus candidatos. Para isso foi feito este fórum, no entanto no momento você só vai conseguir se cadastrar e logar </p>
+
+					<div class="btn-home">
+						<div class="nav">
+							<a href="#login" onclick="mudaWidth()">Entrar</a>
+						</div>
+						<div class="nav">	
+							<a href="#cadastro" onclick="mudaWidth()">Cadastre-se</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="form page" id="cadastro">
+					<form class="cadastro">
+						<h2>Cadastre-se Agora!</h2>
+						<div class="container-entrada">
+							<label for="nome">Nome Completo:</label>
+							<p id="msgNome" class="msg"></p>
+							<input type="text" id="nome">
+				
+						</div>
+
+						<div class="container-entrada">
+							<label for="usuario">Usuário:</label>
+							<p id="msgUsuario" class="msg"></p>
+							<input type="text" id="usuario">
+						</div>
+
+						<div class="container-entrada">
+							<label for="email">Email:</label>
+							<p id="msgEmail" class="msg"></p>
+							<input type="email" id="email">							
+						</div>
+
+						<div class="container-entrada">
+							<label for="senha">Senha:</label>
+							<p id="msgSenha" class="msg"></p>
+							<input type="password" id="senha">							
+						</div>
+
+						<div class="container-btn">
+							<input type="button" id="btnCadastrar" value="Cadastrar">	
+						</div>
+					</form>
+				</div>
+				<div class="form page" id="login">
+					<form id="login" class="login">
+						<h2>Login</h2>
+						<div class="container-entrada">
+							<label for="usuario">Usuário</label>
+							<p id="msgUser" class="msg"></p>
+							<input type="text" id="user">
+						</div>
+
+						<div class="container-entrada">
+							<label for="password">Senha</label>
+							<p id="msgPassword" class="msg"></p>
+							<input type="password" id="password">
+						</div>
+
+						<div class="container-btn">
+							<input type="button" id="btnLogin" value="Entrar">
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<script type="text/javascript" src="js/estilo.js"></script>
+		<script type="text/javascript" src="js/classUsuario.js"></script>
+		<script type="text/javascript" src="js/bancoUsuario.js"></script>
+		<script type="text/javascript" src="js/cadastroUsuario.js"></script>
+		<script type="text/javascript" src="js/loginUsuario.js"></script>
+		<script type="text/javascript" src="js/limpaCampos.js"></script>
+	</body>
+</html>
